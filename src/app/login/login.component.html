@@ -1,0 +1,28 @@
+<div class="container mt-3">
+
+  <div class="col-md-6 offset-md-3">
+ <div class="card" style=" background-color: aliceblue;">
+  <div class="card-header bg-info">Authentication</div>
+
+  <div class="card-body">
+  <!-- {{loginFrom.value | json}} -->
+      <form [formGroup]="loginFrom" (ngSubmit)="handleLogin()">
+
+        <div class="mb-3">
+          <label for=""> Username:</label>
+          <input type="text" class="form-control" formControlName="username">
+        </div>
+        <div class="mb-3">
+          <label for=""> password:</label>
+          <input type="password" class="form-control" formControlName="password">
+        </div>
+        <button type="submit" class="btn btn-primary">Login</button>
+
+
+      </form>
+
+  </div>
+ </div>
+
+  </div>
+</div>
